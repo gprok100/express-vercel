@@ -1,5 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const ethers = require('ethers')
+const provider = new ethers.providers.WebSocketProvider('wss://wss-testnet.5ire.network/')
 
 /**
  * GET product list.
